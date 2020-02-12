@@ -28,12 +28,13 @@ body {
 .header .container {
     display: flex;
     align-items: center;
-    padding-top: 32px;
+    padding-top: 34px;
     padding-bottom: 34px;
 }
 
 .logo {
     width: 115px;
+    height: 20px;
     display: block;
     margin: 0;
     margin-right: 440px;
@@ -42,14 +43,15 @@ body {
     font-size: 25px;
     font-weight: 700;
     text-transform: uppercase;
+    /* background-image: url('/assets/SINGOLO_\ .svg');
+    background-repeat: no-repeat;
+    text-indent: -9999px; */
 }
 
 .logo__link {
-    /* color: transparent; */
+    color: #fff;
     text-decoration: none;
-    /* background-image: url('/assets/SINGOLO_\ .svg');
-    background-repeat: no-repeat;
-    background-position: 0 10; */
+   
 }
 
 .navigation {
@@ -62,4 +64,67 @@ body {
     text-transform: uppercase;
     font-size: 12px;
     margin: 0 13px 0 13px;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+    color: #f06c64;
+}
+
+.slider {
+    background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
+}
+
+.slider .container {
+    display: flex;
+    position: relative;
+}
+
+.slider__img--left {
+    margin-top: 52px;
+    margin-left: 110px;
+}
+
+.slider__img--right {
+    margin-top: 172px;
+    margin-left: 75px;
+}
+
+.slider__button {
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    background-color: #c94549;
+    border-radius: 6px;
+    
+}
+
+.slider__button:hover,
+.slider__button:focus {
+    cursor: pointer;
+}
+
+.top-left {
+    transform: rotate(-45deg);
+    top: 288px;
+    left: 40px;
+}
+
+.bottom-left {
+    top: 300px;
+    left: 40px;
+    transform: rotate(45deg);
+}
+
+.top-right {
+    top: 288px;
+    right: 40px;
+    transform: rotate(45deg);
+}
+
+.bottom-right {
+    top: 300px;
+    right: 40px;
+    transform: rotate(-45deg);
 }
