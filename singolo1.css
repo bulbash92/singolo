@@ -233,37 +233,37 @@ body {
   }
 
   .pen {
-    background-image: url("/assets/pen.svg");
+    background-image: url("assets/pen.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .bulb {
-    background-image: url("/assets/bulb.svg");
+    background-image: url("assets/bulb.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .heart {
-    background-image: url("/assets/heart.svg");
+    background-image: url("assets/heart.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .phone {
-    background-image: url("/assets/phone.svg");
+    background-image: url("assets/phone.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .bubble {
-    background-image: url("/assets/bubble.svg");
+    background-image: url("assets/bubble.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .star {
-    background-image: url("/assets/star.svg");
+    background-image: url("assets/star.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
