@@ -14,7 +14,7 @@ body {
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
     color: #fff;
-    font-family: "Lato";
+    font-family: "Lato-Bold";
     overflow: hidden;
 }
 
@@ -35,23 +35,27 @@ body {
 .logo {
     width: 115px;
     height: 20px;
-    display: block;
+    display: flex;
+    align-items: center;
     margin: 0;
     margin-right: 440px;
     margin-left: 40px;
     padding: 0;
     font-size: 25px;
     font-weight: 700;
+    letter-spacing: -0.2px;
     text-transform: uppercase;
+    position: relative;
 }
 
 .logo::after {
     content: "*";
+    position: absolute;
     width: 5px;
     height: 5px;
     color: #f06c64;
-    right: 5px;
-    top: 0;
+    right: 0;
+    top: -5px;
 }
 
 .logo__link {
@@ -61,7 +65,8 @@ body {
 }
 
 .navigation {
-    width: 400px;
+    width: 405px;
+    height: 12px;
 }
 
 .navigation__link {
@@ -69,6 +74,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
+    letter-spacing: -0.2px;
     margin: 0 13px 0 13px;
     position: relative;
 }
@@ -163,7 +169,7 @@ body {
     margin-left: 40px;
     margin-top: 25px;
     font-size: 30px;
-    font-family: "Lato";
+    font-family: "Lato-Black";
     line-height: 18px;
     font-weight: 900;
 }
@@ -177,7 +183,8 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
-    font-family: "Lato";
+    font-family: "Lato-light";
+    letter-spacing: -0.1px;
     font-weight: 300;
     text-align: left;
 }
@@ -187,19 +194,20 @@ body {
     font-size: 18px;
     line-height: 18px;
     color: #666d89;
-    font-family: "Lato";
+    font-family: "Lato-black";
     font-weight: 900;
-    text-align: left;
 }
 
 .features__item-descriptions {
-    width: 220px;
+    width: 219px;
     margin: 0;
     margin-top: 10px;
+    font-family: "Lato-regular";
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
     overflow: hidden;
+    letter-spacing: -0.2px;
 }
 
 .grid-container {
