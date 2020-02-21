@@ -168,7 +168,7 @@ body {
 .features__title {
     margin: 0;
     margin-left: 40px;
-    margin-top: 27px;
+    margin-top: 30px;
     font-size: 30px;
     font-family: "Lato-Black";
     line-height: 18px;
@@ -178,16 +178,17 @@ body {
 .features__text {
     margin: 0;
     margin-left: 40px;
-    margin-top: 30px;
+    margin-top: 26px;
     width: 940px;
     height: 57px;
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
     font-family: "Lato-light";
-    letter-spacing: -0.1px;
+    letter-spacing: -0.4px;
     font-weight: 300;
-    text-align: left;
+    text-align: justify;
+    word-spacing: 1px;
 }
 
 .features__item-title {
@@ -202,17 +203,18 @@ body {
 .features__item-descriptions {
     width: 219px;
     margin: 0;
-    margin-top: 10px;
+    margin-top: 11px;
     font-family: "Lato-regular";
     font-size: 12px;
-    line-height: 22px;
+    line-height: 21px;
     color: #767e9e;
     overflow: hidden;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.4px;
+    word-spacing: 3.2px;
 }
 
 .grid-container {
-    margin-top: 50px;
+    margin-top: 49px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
     grid-gap: 20px;
@@ -225,7 +227,7 @@ body {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     width: 300px;
     height: 85px;
     
