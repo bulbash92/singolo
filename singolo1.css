@@ -20,7 +20,7 @@ ul {
 
 .header {
     width: 100%;
-    height: 90px;
+    height: 89px;
     align-items: center;
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
@@ -54,6 +54,7 @@ ul {
     padding: 0;
     font-size: 25px;
     font-weight: 700;
+    line-height: 6px;
     letter-spacing: -0.5px;
     text-transform: uppercase;
     position: relative;
@@ -66,7 +67,7 @@ ul {
     height: 5px;
     color: #f06c64;
     right: 3px;
-    top: -5px;
+    top: 7px;
 }
 
 .logo__link {
@@ -87,6 +88,7 @@ ul {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
+    line-height: 6px;
     letter-spacing: -0.2px;
     position: relative;
 }
@@ -110,7 +112,7 @@ ul {
 .slider {
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
-    padding-bottom: 57px;
+    padding-bottom: 56px;
 }
 
 .slider .container {
@@ -174,7 +176,7 @@ ul {
 
 .features .container {
     padding: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 48px;
 }
 
 h2 {
@@ -307,7 +309,7 @@ h2 {
 
   .portfolio .container {
       max-width: 940px;
-      padding: 65px 40px 67px 40px;
+      padding: 68px 40px 67px 40px;
   }
 
   .portfolio__title {
@@ -364,6 +366,8 @@ h2 {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      height: 620px;
+      overflow: hidden;
   }
 
   .portfolio__gallery-image-block {
@@ -375,6 +379,88 @@ h2 {
   .portfolio__gallery-image {
       width: 100%;
   }
+
+  .about-us {
+      background-color: #f2f2f2;
+      border-bottom: 6px solid #ffffff;
+  }
+
+  .about-us .container {
+      max-width: 940px;
+      padding: 69px 40px 67px 40px;
+  }
+
+  .about-us__text {
+    margin-top: 28px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato-Light";
+    letter-spacing: -0.2px;
+    text-align: justify;
+  }
+
+  .staff {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 44px;
+  }
+
+  .staff__profile {
+      width: 300px;
+  }
+  
+  .staff__profile-title {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato-Black";
+    font-weight: 900;
+    margin-top: 15px;
+    letter-spacing: -0.2px;
+  }
+
+  .staff__profile-descriptions {
+    font-size: 12px;
+    line-height: 20px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    letter-spacing: -0.1px;
+    margin-top: 11px;
+  }
+
+  .social-links {
+      width: 154px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 24px;
+  }
+
+  .social-links__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid #666d89;
+  }
+
+ 
+  .social-links__link:hover,
+  .social-links__link:focus {
+      color: #ffffff;
+      background-color:black;
+      border: 1px solid #ffffff;
+  }
+
+  .social-links__link:hover path,
+  .social-links__link:focus path {
+      fill: #ffffff;
+  }
+
 
   
 
