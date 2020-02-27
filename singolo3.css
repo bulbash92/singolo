@@ -76,6 +76,7 @@
     height: 195px;
     border: none;
     background-color: #d6564f;
+    color: #f48c8f;
     border-radius: 5px;
     padding-left: 15px;
     padding-top: 6px;
@@ -84,7 +85,9 @@
 
 
 .get-a-quote__form-input:focus::-webkit-input-placeholder,
-.get-a-quote__form-textarea:focus::-webkit-input-placeholder {
+.get-a-quote__form-textarea:focus::-webkit-input-placeholder,
+.get-a-quote__form-input:focus::-moz-placeholder,
+.get-a-quote__form-textarea:focus::-moz-placeholder {
     color: transparent;
 }
 
