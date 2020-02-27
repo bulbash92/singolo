@@ -101,7 +101,7 @@ ul {
     background-color: #3c404f;
     border-radius: 50%;
     right: -16px;
-    top: 7px;
+    top: 3px;
 }
 
 .navigation__link:hover,
@@ -409,6 +409,14 @@ h2 {
   .staff__profile {
       width: 300px;
   }
+
+  .image-block {
+      width: 300px;
+  }
+
+  .staff__profile-image {
+      width: 100%;
+  }
   
   .staff__profile-title {
     font-size: 18px;
@@ -432,7 +440,7 @@ h2 {
   }
 
   .social-links {
-      width: 154px;
+      width: 152px;
       display: flex;
       justify-content: space-between;
       margin-top: 24px;
@@ -442,8 +450,8 @@ h2 {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 32px;
-      height: 32px;
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
       border: 1px solid #666d89;
   }
@@ -460,6 +468,8 @@ h2 {
   .social-links__link:focus path {
       fill: #ffffff;
   }
+
+  
 
 
   

@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.get-a-quote {
+    background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
+}
+
+.get-a-quote .container {
+    max-width: 940px;
+    padding: 69px 40px 64px 40px;
+}
+
+.get-a-quote__title {
+    letter-spacing: -0.2px;
+    color: #f0d8d9;
+}
+
+.get-a-quote__text {
+    font-family: "Lato-Light";
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    margin-top: 28px;
+    letter-spacing: -0.2px;
+    text-align: justify;
+}
+
+.flex-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.get-a-quote__form {
+    width: 620px;
+    margin-top: 41px;
+}
+
+.get-a-quote__form-input {
+    width: 605px;
+    height: 40px;
+    border: none;
+    color: #f48c8f;
+    background-color: #d6564f;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 12px;
+    line-height: 22px;
+    font-family: "Lato-Regular";
+    font-weight: 400;
+    text-align: justify;
+    letter-spacing: 0.2px;
+}
+
+.get-a-quote__form-input:hover,
+.get-a-quote__form-input:focus,
+.get-a-quote__form-textarea:hover,
+.get-a-quote__form-textarea:focus {
+    outline: none;
+}
+
+.get-a-quote__form-input::-webkit-input-placeholder,
+.get-a-quote__form-textarea::-webkit-input-placeholder {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato-Regular";
+    font-weight: 400;
+}
+
+.get-a-quote__form-textarea {
+    width: 605px;
+    height: 195px;
+    border: none;
+    background-color: #d6564f;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-top: 6px;
+    resize: none;
+}
+
+
+.get-a-quote__form-input:focus::-webkit-input-placeholder,
+.get-a-quote__form-textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.get-a-quote__form-button {
+    display: block;
+    width: 150px;
+    height: 50px;
+    background-color: #d6564f;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    color: #f48c8f;
+    margin-top: 15px;
+}
+
+.get-a-quote__form-button:hover,
+.get-a-quote__form-button:focus {
+    cursor: pointer;
+}
+
+.contact-information {
+    margin-top: 44px;
+    width: 300px;
+}
+
+.contact-information__title {
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato-Black";
+    font-weight: 900;
+}
+
+.contact-information__text {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato-Regular";
+    font-weight: 400;
+    margin-top: 9px;
+    text-align: justify;
+    letter-spacing: -0.2px;
+}
+
+.contact-information__contacts {
+    margin-top: 20px;
+    padding-left: 23px;
+}
+
+.contact-information__contacts-link {
+    font-size: 12px;
+    line-height: 19px;
+    color: #f0d8d9;
+    font-family: "Lato-Regular";
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: -0.1px;
+    position: relative;
+}
+
+.location::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 12px;
+    background-image:url('assets/location.png') ;
+    background-position: center;
+    background-repeat: no-repeat; 
+    top: 2px;
+    left: -21px;
+}
+
+.tell::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-image:url('assets/phone.png') ;
+    background-position: center;
+    background-repeat: no-repeat; 
+    top: 2px;
+    left: -22px;
+}
+
+.mail::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-image:url('assets/mail.png') ;
+    background-position: center;
+    background-repeat: no-repeat; 
+    top: 3px;
+    left: -22px;
+}
+
+
+.footer {
+    background-color: #2d303a;
+}
+
+.footer .container {
+    max-width: 940px;
+    padding: 21px 40px 32px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .social-links {
+    margin: 0;
+}
+
+.copyright {
+    font-size: 12px;
+    line-height: 5px;
+    color: #666d89;
+    font-family: "Lato-Regular";
+    font-weight: 400;
+}
+
+
