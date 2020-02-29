@@ -35,16 +35,16 @@
 
 .get-a-quote__form {
     width: 620px;
-    margin-top: 41px;
+    margin-top: 42px;
 }
 
 .get-a-quote__form-input {
     width: 605px;
-    height: 40px;
+    height: 38px;
     border: none;
     color: #f48c8f;
     background-color: #d6564f;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
     border-radius: 5px;
     padding-left: 15px;
     font-size: 12px;
@@ -85,7 +85,10 @@
 
 
 .get-a-quote__form-input:focus::-webkit-input-placeholder,
-.get-a-quote__form-textarea:focus::-webkit-input-placeholder,
+.get-a-quote__form-textarea:focus::-webkit-input-placeholder{
+    color: transparent;
+}
+
 .get-a-quote__form-input:focus::-moz-placeholder,
 .get-a-quote__form-textarea:focus::-moz-placeholder {
     color: transparent;
@@ -203,10 +206,11 @@ footer .social-links {
 
 .copyright {
     font-size: 12px;
-    line-height: 5px;
+    line-height: 6px;
     color: #666d89;
     font-family: "Lato-Regular";
     font-weight: 400;
+    letter-spacing: -0.1px;
 }
 
 
