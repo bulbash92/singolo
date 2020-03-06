@@ -18,13 +18,11 @@ ul {
     padding: 0;
 }
 
-
 h2 {
-    font-size: 30px;
+    font-size: 30px;        
     font-family: "Lato-Black";
     line-height: 18px;
     font-weight: 900;
-    
 }
 
 .header {
@@ -89,7 +87,7 @@ h2 {
     width: 371px;
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 12px;
 }
 
 .navigation__link {
@@ -185,7 +183,7 @@ h2 {
 
 .features .container {
     max-width: 940px;
-    padding: 68px 40px 50px 40px;
+    padding: 68px 40px 49px 40px;
 }
 
 
@@ -198,6 +196,7 @@ h2 {
     margin-top: 28px;
     width: 940px;
     height: 57px;
+    font-family: "Lato-Light";
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
@@ -217,6 +216,7 @@ h2 {
 
 .features__item-descriptions {
     width: 219px;
+    height: 70px;
     margin: 0;
     margin-top: 9px;
     font-family: "Lato-Regular";
@@ -224,12 +224,13 @@ h2 {
     line-height: 22px;
     color: #767e9e;
     overflow: hidden;
-    letter-spacing: -0.2px;
+    word-break: break-all;
     text-align: justify;
+    letter-spacing: 0.2px;
 }
 
 .grid-container {
-    margin-top: 49px;
+    margin-top: 48px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
     grid-gap: 20px;
@@ -383,7 +384,7 @@ h2 {
 
   .about-us .container {
       max-width: 940px;
-      padding: 68px 40px 68px 40px;
+      padding: 68px 40px 67px 40px;
   }
 
   .about-us__text {
@@ -420,7 +421,7 @@ h2 {
     color: #666d89;
     font-family: "Lato-Black";
     font-weight: 900;
-    margin-top: 16px;
+    margin-top: 15px;
     letter-spacing: -0.2px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -434,8 +435,8 @@ h2 {
     font-family: "Lato";
     font-weight: 400;
     text-align: justify;
-    letter-spacing: -0.1px;
-    margin-top: 10px;
+    letter-spacing: 0.3px;
+    margin-top: 9px;
   }
 
   .social-links {
@@ -488,7 +489,7 @@ h2 {
     font-size: 18px;
     line-height: 30px;
     color: #f0d8d9;
-    margin-top: 28px;
+    margin-top: 27px;
     letter-spacing: -0.2px;
     text-align: justify;
 }
@@ -552,7 +553,6 @@ h2 {
     resize: none;
 }
 
-
 .get-a-quote__form-input:focus::placeholder,
 .get-a-quote__form-textarea:focus::placeholder{
     color: transparent;
@@ -596,7 +596,8 @@ h2 {
     font-weight: 400;
     margin-top: 10px;
     text-align: justify;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.1px;
+    word-break: break-all;
 }
 
 .contact-information__contacts {

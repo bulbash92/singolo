@@ -3,6 +3,55 @@
     margin: 0;
 }
 
+h2 {
+    font-size: 30px;
+    font-family: "Lato-Black";
+    line-height: 18px;
+    font-weight: 900;
+    
+}
+
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-links {
+    width: 152px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.social-links__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #666d89;
+}
+
+
+.social-links__link:hover,
+.social-links__link:focus {
+    color: #ffffff;
+    background-color:black;
+    border: 1px solid #ffffff;
+}
+
+.social-links__link:hover path,
+.social-links__link:focus path {
+    fill: #ffffff;
+}
+
 .get-a-quote {
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
@@ -23,7 +72,7 @@
     font-size: 18px;
     line-height: 30px;
     color: #f0d8d9;
-    margin-top: 28px;
+    margin-top: 27px;
     letter-spacing: -0.2px;
     text-align: justify;
 }
@@ -55,6 +104,10 @@
     letter-spacing: 0.2px;
 }
 
+.get-a-quote__form-input:nth-child(3){
+    margin: 0;
+}
+
 .get-a-quote__form-input:hover,
 .get-a-quote__form-input:focus,
 .get-a-quote__form-textarea:hover,
@@ -81,16 +134,12 @@
     padding-left: 15px;
     padding-top: 6px;
     resize: none;
+    margin-top: 15px;
 }
 
 
-.get-a-quote__form-input:focus::-webkit-input-placeholder,
-.get-a-quote__form-textarea:focus::-webkit-input-placeholder{
-    color: transparent;
-}
-
-.get-a-quote__form-input:focus::-moz-placeholder,
-.get-a-quote__form-textarea:focus::-moz-placeholder {
+.get-a-quote__form-input:focus::placeholder,
+.get-a-quote__form-textarea:focus::placeholder{
     color: transparent;
 }
 
@@ -112,7 +161,7 @@
 }
 
 .contact-information {
-    margin-top: 44px;
+    margin-top: 43px;
     width: 300px;
 }
 
@@ -136,8 +185,12 @@
 }
 
 .contact-information__contacts {
-    margin-top: 20px;
+    margin-top: 21px;
     padding-left: 23px;
+}
+
+.contact-information__contacts-item {
+    margin-top: 3px;
 }
 
 .contact-information__contacts-link {
