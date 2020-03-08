@@ -429,13 +429,14 @@ h2 {
   }
 
   .staff__profile-descriptions {
+    width: 300px;
+    max-height: 66px;
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
     font-family: "Lato";
     font-weight: 400;
     text-align: justify;
-    letter-spacing: 0.3px;
     margin-top: 9px;
   }
 
@@ -476,7 +477,7 @@ h2 {
 
 .get-a-quote .container {
     max-width: 940px;
-    padding: 69px 40px 64px 40px;
+    padding: 69px 40px 1px 40px;
 }
 
 .get-a-quote__title {
@@ -677,8 +678,3 @@ footer .social-links {
     font-weight: 400;
     letter-spacing: -0.1px;
 }
-
-
-
-  
-
