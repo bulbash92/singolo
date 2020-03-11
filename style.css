@@ -111,6 +111,10 @@ h2 {
     top: 3px;
 }
 
+.navigation__link--active {
+    color:#f06c64;
+}
+
 .navigation__link:hover,
 .navigation__link:focus {
     color: #f06c64;
