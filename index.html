@@ -27,12 +27,19 @@
         <div class="container">
             <span class="slider__button top-left"></span>
             <span class="slider__button bottom-left"></span>
+            <div class="slider__slide slider__slide--1">
+                <div class="display-off display-off--1"></div>
             <img src="assets/iPhone Vertical.png" width="244" height="486" alt="iphone"
                 class="slider__img slider__img--left">
+                <div class="display-off display-off--2"></div>
             <img src="assets/iPhone Horizontal.png" width="485" height="243" alt="iphone"
                 class="slider__img slider__img--right">
-            <span class="slider__button top-right"></span>
-            <span class="slider__button bottom-right"></span>
+            </div>
+            <div class="slider__slide slider__slide--2">
+                <img src="assets/Slide-2.png" alt="slide-2">
+            </div>
+            <span class="slider__button top-right next"></span>
+            <span class="slider__button bottom-right next"></span>
         </div>
     </div>
     <section class="features" id="services">
@@ -111,7 +118,7 @@
             <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
                 odio sem nec elit.</p>
             <ul class="portfolio__tabs">
-                <li class="portfolio__tabs-tab white">All</li>
+                <li class="portfolio__tabs-tab">All</li>
                 <li class="portfolio__tabs-tab">Web Design</li>
                 <li class="portfolio__tabs-tab">Graphic Design</li>
                 <li class="portfolio__tabs-tab">Artwork</li>
@@ -268,8 +275,8 @@
                     <input class="get-a-quote__form-input" type="text" required placeholder="Name (Required)">
                     <input class="get-a-quote__form-input" type="email" required placeholder="Email (Required)"
                         pattern="^[^ ]+@[^ ]+\.[a-z]{2,3}$">
-                    <input class="get-a-quote__form-input" type="text" placeholder="Subject">
-                    <textarea class="get-a-quote__form-textarea"
+                    <input class="get-a-quote__form-input subject" type="text" id="subject" placeholder="Subject">
+                    <textarea class="get-a-quote__form-textarea" id="describe"
                         placeholder="Describe your project in detail..."></textarea>
                     <button type="submit" class="get-a-quote__form-button">Submit</button>
                 </form>
@@ -324,6 +331,12 @@
             </ul>
         </div>
     </footer>
+    <section class="popup hidden">
+        <p>Письмо отправлено</p>
+        <p class="popup__message-subject"></p>
+        <p class="popup__message-describe"></p>
+        <button type="button" class="popup__close ">Ok</button>
+    </section>
     <script src="script.js"></script>
 </body>
 
