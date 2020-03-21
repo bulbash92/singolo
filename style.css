@@ -156,6 +156,10 @@ h2 {
     animation: 0.5s ease-in-out;
 }
 
+.slider__item-img-2 img {
+    width: 100%;
+}
+
 .active {
     display: flex;
     justify-content: space-between;
@@ -167,8 +171,8 @@ h2 {
     position: absolute;
     top: 0;
     width: 100%;
+    align-items: center;
 }
-
 
 .to-left {
     animation-name: left;
