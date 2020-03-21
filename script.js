@@ -68,37 +68,6 @@ sliderBtnNext.addEventListener('click', function () {
     }
 });
 
-
-//slider 
-// (function (slideIndex = 0) {
-//     const sliderWidth = slider.querySelector('.container').offsetWidth,
-//         sliderContainer = slider.querySelector('.slider__items'),
-//         sliderItems = sliderContainer.querySelector('.slider__item'),
-//         sliderBtnBack = slider.querySelector('.slider__button--left'),
-//         sliderBtnNext = slider.querySelector('.slider__button--right');
-
-//     sliderContainer.style.width = (sliderItems.length * sliderWidth) + 'px';
-
-//     sliderBtnBack.addEventListener('click', () => {
-//         if (slideIndex === 0) {
-//             slideIndex = sliderItems.length - 1;
-//         } else {
-//             slideIndex -= 1;
-//         }
-//         sliderContainer.style.marginLeft = -(slideIndex * sliderWidth) + 'px';
-//     });
-
-//     sliderBtnNext.addEventListener('click', () => {
-//         if (slideIndex === sliderItems.length -1) {
-//             slideIndex = 0;
-//         } else {
-//             slideIndex +=1;
-//         }
-//         sliderContainer.style.marginLeft = -(slideIndex * sliderWidth) + 'px';
-//     });
-// })()
-
-
 // display off 
 slider.addEventListener('click', (event) => {
     const target = event.target;
