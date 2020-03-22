@@ -2,11 +2,44 @@
 
 //add active nav element
 const nav = document.querySelector('.navigation');
+const HEADER = document.querySelector('.header');
+const SERVICES = document.getElementById('services');
+const PORTFOLIO = document.getElementById('portfolio');
+const ABOUT_US = document.getElementById('about');
+const CONTACT = document.getElementById('contact');
+
 nav.addEventListener('click', evt => {
     const navLink = nav.querySelectorAll('.navigation__link');
     navLink.forEach(elem => elem.classList.remove('navigation__link--active'));
     evt.target.classList.add('navigation__link--active');
 })
+
+window.addEventListener('scroll', (evt) => {
+    if(window.scrollY < SERVICES.offsetTop - HEADER.offsetHeight) {
+        nav.querySelectorAll('.navigation__link').forEach(el => el.classList.remove('navigation__link--active'));
+        document.getElementById('home_scroll').classList.add('navigation__link--active');
+    }
+    if(window.scrollY >= SERVICES.offsetTop - HEADER.offsetHeight && window.scrollY < PORTFOLIO.offsetTop - HEADER.offsetHeight) {
+        nav.querySelectorAll('.navigation__link').forEach(el => el.classList.remove('navigation__link--active'));
+        document.getElementById('services_scroll').classList.add('navigation__link--active');
+    }
+    if(window.scrollY >= PORTFOLIO.offsetTop - HEADER.offsetHeight) {
+        nav.querySelectorAll('.navigation__link').forEach(el => el.classList.remove('navigation__link--active'));
+        document.getElementById('portfolio_scroll').classList.add('navigation__link--active');
+    }
+    if(window.scrollY >= ABOUT_US.offsetTop - HEADER.offsetHeight) {
+        nav.querySelectorAll('.navigation__link').forEach(el => el.classList.remove('navigation__link--active'));
+        document.getElementById('about_us_scroll').classList.add('navigation__link--active');
+    }
+    if(window.scrollY >= CONTACT.offsetTop - HEADER.offsetHeight) {
+        nav.querySelectorAll('.navigation__link').forEach(el => el.classList.remove('navigation__link--active'));
+        document.getElementById('contact_scroll').classList.add('navigation__link--active');
+    }
+    if(window.scrollY+1 >= document.documentElement.scrollHeight-document.documentElement.clientHeight) {
+        nav.querySelectorAll('.navigation__link').forEach(el => el.classList.remove('navigation__link--active'));
+        document.getElementById('contact_scroll').classList.add('navigation__link--active');
+    }
+});
 
 const phone = document.querySelectorAll('.slider__img');
 const phoneLeft = document.querySelector('.slider__img--left');

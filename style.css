@@ -49,16 +49,16 @@ h2 {
 .container {
     margin: 0 auto;
     max-width: 940px;
+    padding: 0 40px;
     overflow: hidden;
 }
 
 .header .container {
     display: flex;
     align-items: center;
-    max-width: 940px;
     justify-content: space-between;
-    padding-top: 34px;
-    padding-bottom: 34px;
+    padding: 34px 40px 34px 40px;
+
 }
 
 .logo {
@@ -136,7 +136,6 @@ h2 {
 
 .slider .container {
     position: relative;
-    padding: 0 40px;
 }
 
 .slider__items {
@@ -156,8 +155,51 @@ h2 {
     animation: 0.5s ease-in-out;
 }
 
+.slider__item-img--vertical {
+    margin-left: 30px;
+    width: 244px;
+    height: 486px;
+}
+
+.slider__item-img--horizontal {
+    margin-right: 31px;
+    width: 485px;
+    height: 243px;
+}
+
+.slider__img {
+    width: 100%;
+}
+
+.slider__item-img:hover,
+.slider__item-img:focus {
+    cursor: pointer;
+}
+
+
 .slider__item-img-2 img {
     width: 100%;
+}
+
+.display-off {
+    position: absolute;
+    background-color: black;
+}
+
+.display-off--1 {
+    display: none;
+    width: 189px;
+    height: 334px;
+    top: 118px;
+    left: 45px;
+}
+
+.display-off--2 {
+    display: none;
+    width: 333px;
+    height: 189px;
+    top: 189px;
+    right: 121px;
 }
 
 .active {
@@ -169,6 +211,7 @@ h2 {
 .next {
     display: flex;
     position: absolute;
+    justify-content: space-between;
     top: 0;
     width: 100%;
     align-items: center;
@@ -211,39 +254,19 @@ h2 {
 }
 
 
-.display-off {
-    position: absolute;
-    background-color: black;
-}
-
-.display-off--1 {
-    display: none;
-    width: 189px;
-    height: 334px;
-    top: 118px;
-    left: 45px;
-}
-
-.display-off--2 {
-    display: none;
-    width: 333px;
-    height: 189px;
-    top: 189px;
-    right: 90px;
-}
-
-.slider__item-img--vertical {
-    margin-left: 30px;
-}
 
 .slider__button {
     display: flex;
     align-items: center;
     align-content: center;
     position: absolute;
-    width: 4%;
+    width: 6%;
     height: 100%;
     cursor: pointer;
+}
+
+.slider__button:hover {
+    background-color: rgba(0, 0, 1, 0.3);
 }
 
 .slider__button--left {
@@ -305,7 +328,6 @@ h2 {
 }
 
 .features .container {
-    max-width: 940px;
     padding: 68px 40px 49px 40px;
 }
 
@@ -429,7 +451,6 @@ h2 {
 }
 
 .portfolio .container {
-    max-width: 940px;
     padding: 68px 40px 68px 40px;
 }
 
@@ -497,7 +518,7 @@ h2 {
 .portfolio__gallery-image-block:hover,
 .portfolio__gallery-image-block:focus {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
 
 .portfolio__gallery-image-block--active {
@@ -514,7 +535,6 @@ h2 {
 }
 
 .about-us .container {
-    max-width: 940px;
     padding: 68px 40px 67px 40px;
 }
 
@@ -560,7 +580,6 @@ h2 {
 }
 
 .staff__profile-descriptions {
-    width: 300px;
     max-height: 66px;
     font-size: 12px;
     line-height: 22px;
@@ -607,8 +626,7 @@ h2 {
 }
 
 .get-a-quote .container {
-    max-width: 940px;
-    padding: 69px 40px 1px 40px;
+    padding: 69px 40px 64px 40px;
 }
 
 .get-a-quote__title {
@@ -637,7 +655,7 @@ h2 {
 }
 
 .get-a-quote__form-input {
-    width: 605px;
+    width: calc(100% - 15px);
     height: 36px;
     border: none;
     color: #f48c8f;
@@ -674,7 +692,7 @@ h2 {
 }
 
 .get-a-quote__form-textarea {
-    width: 603px;
+    width: calc(100% - 15px);;
     height: 193px;
     border: none;
     background-color: #d6564f;
@@ -692,8 +710,8 @@ h2 {
 
 .get-a-quote__form-button {
     display: block;
-    width: 150px;
-    height: 50px;
+    width: 146px;
+    height: 38px;
     background-color: #d6564f;
     border: none;
     border-radius: 5px;
@@ -790,7 +808,6 @@ h2 {
 }
 
 .footer .container {
-    max-width: 940px;
     padding: 21px 40px 32px 40px;
     display: flex;
     justify-content: space-between;
