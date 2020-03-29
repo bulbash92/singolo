@@ -158,6 +158,7 @@
     .navigation__list {
         margin-top: 185px;
         margin-left: 70px;
+        display: block;
     }
 
     .navigation__link {
