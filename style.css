@@ -61,6 +61,10 @@ h2 {
 
 }
 
+.header__burger {
+    display: none;
+}
+
 .logo {
     width: 115px;
     height: 20px;
