@@ -1,4 +1,21 @@
 'use strict'
+//burger menu
+
+const burger = document.querySelector('.header__burger');
+burger.addEventListener('click', (event) => {
+    if (document.querySelector('.navigation').style.display === 'none') {
+        document.querySelector('.navigation').style.display = 'block';
+        burger.classList.add('header__burger--active');
+        document.querySelector('.logo').classList.add('logo-active');
+        document.querySelector('.shadow').style.display = "block"
+    } else {
+        document.querySelector('.navigation').style.display = 'none';
+        burger.classList.remove('header__burger--active');
+        document.querySelector('.logo').classList.remove('logo-active');
+        document.querySelector('.shadow').style.display = "none";
+    }
+})
+
 
 //add active nav element
 const nav = document.querySelector('.navigation');
@@ -15,27 +32,27 @@ nav.addEventListener('click', evt => {
 })
 
 window.addEventListener('scroll', (evt) => {
-    if(window.scrollY < SERVICES.offsetTop - HEADER.offsetHeight) {
+    if (window.scrollY < SERVICES.offsetTop - HEADER.offsetHeight) {
         nav.querySelectorAll('.navigation__link').forEach(el => el.classList.remove('navigation__link--active'));
         document.getElementById('home_scroll').classList.add('navigation__link--active');
     }
-    if(window.scrollY >= SERVICES.offsetTop - HEADER.offsetHeight && window.scrollY < PORTFOLIO.offsetTop - HEADER.offsetHeight) {
+    if (window.scrollY >= SERVICES.offsetTop - HEADER.offsetHeight && window.scrollY < PORTFOLIO.offsetTop - HEADER.offsetHeight) {
         nav.querySelectorAll('.navigation__link').forEach(el => el.classList.remove('navigation__link--active'));
         document.getElementById('services_scroll').classList.add('navigation__link--active');
     }
-    if(window.scrollY >= PORTFOLIO.offsetTop - HEADER.offsetHeight) {
+    if (window.scrollY >= PORTFOLIO.offsetTop - HEADER.offsetHeight) {
         nav.querySelectorAll('.navigation__link').forEach(el => el.classList.remove('navigation__link--active'));
         document.getElementById('portfolio_scroll').classList.add('navigation__link--active');
     }
-    if(window.scrollY >= ABOUT_US.offsetTop - HEADER.offsetHeight) {
+    if (window.scrollY >= ABOUT_US.offsetTop - HEADER.offsetHeight) {
         nav.querySelectorAll('.navigation__link').forEach(el => el.classList.remove('navigation__link--active'));
         document.getElementById('about_us_scroll').classList.add('navigation__link--active');
     }
-    if(window.scrollY >= CONTACT.offsetTop - HEADER.offsetHeight) {
+    if (window.scrollY >= CONTACT.offsetTop - HEADER.offsetHeight) {
         nav.querySelectorAll('.navigation__link').forEach(el => el.classList.remove('navigation__link--active'));
         document.getElementById('contact_scroll').classList.add('navigation__link--active');
     }
-    if(window.scrollY+1 >= document.documentElement.scrollHeight-document.documentElement.clientHeight) {
+    if (window.scrollY + 1 >= document.documentElement.scrollHeight - document.documentElement.clientHeight) {
         nav.querySelectorAll('.navigation__link').forEach(el => el.classList.remove('navigation__link--active'));
         document.getElementById('contact_scroll').classList.add('navigation__link--active');
     }
@@ -63,14 +80,14 @@ function changeCurrentItem(n) {
 function hideItem(direction) {
     isEnabled = false;
     items[currentItem].classList.add(direction);
-    items[currentItem].addEventListener('animationend', function() {
+    items[currentItem].addEventListener('animationend', function () {
         this.classList.remove('active', direction);
     });
 }
 
 function showItem(direction) {
     items[currentItem].classList.add('next', direction);
-    items[currentItem].addEventListener('animationend', function() {
+    items[currentItem].addEventListener('animationend', function () {
         this.classList.remove('next', direction);
         this.classList.add('active');
         isEnabled = true;
